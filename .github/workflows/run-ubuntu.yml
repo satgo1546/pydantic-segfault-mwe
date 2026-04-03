@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v6
-      - run: apt-get install musl-tools
+      - run: sudo apt-get install musl-tools
       - run: pip install uv
       - run: uv python install cpython-3.11.15-linux-x86_64-musl
       - run: python3.11 -m pip install pydantic==2.12.5
