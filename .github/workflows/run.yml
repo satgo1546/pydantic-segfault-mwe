@@ -11,7 +11,7 @@ on:
 
 jobs:
   docker-run:
-    runs-on: ubuntu-24.04-arm
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v6
       - run: docker build -t a .
